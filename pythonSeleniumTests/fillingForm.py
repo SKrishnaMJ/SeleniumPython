@@ -2,6 +2,7 @@ import time
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.select import Select
 
 driver = webdriver.Chrome()
 driver.maximize_window()
@@ -12,6 +13,12 @@ driver.find_element(By.NAME,"name").send_keys("Sai Krishna M J")
 driver.find_element(By.NAME, "email").send_keys("saik@gmail.com")
 driver.find_element(By.ID, "exampleInputPassword1").send_keys("12345")
 driver.find_element(By.ID, "exampleCheck1").click()
+
+# Select class to handle static dropdown
+dropdown = Select(driver.find_element(By.ID,"exampleFormControlSelect1"))
+dropdown.select_by_visible_text("Female")
+
+
 driver.find_element(By.ID,"inlineRadio2").click()
 
 # Xpath Syntax - //tagname[@attribute_name='value'] --> //input[@type='submit']
