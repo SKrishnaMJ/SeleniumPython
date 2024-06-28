@@ -14,6 +14,8 @@ driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 
 # this below command is used to execute a javscript command on the browser
 driver.execute_script("window.scrollBy(0, document.body.scrollHeight);")
+
+# takes a screenshot and saves as a .png file in the current project folder
 driver.get_screenshot_as_file("screenshot1.png")
 
 
