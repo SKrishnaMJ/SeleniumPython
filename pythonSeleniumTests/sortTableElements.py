@@ -21,7 +21,7 @@ veggieItems = driver.find_elements(By.CSS_SELECTOR, "tr td:nth-child(1)")
 for items in veggieItems:
     originalList.append(items.text)
 print(originalList)
-sortedList = originalList
+sortedList = originalList.copy()
 print(sortedList)
 originalList.sort()
 assert sortedList == originalList
