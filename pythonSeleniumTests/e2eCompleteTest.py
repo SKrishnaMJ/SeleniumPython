@@ -20,7 +20,9 @@ time.sleep(3)
 items = driver.find_elements(By.CSS_SELECTOR, "app-card")
 
 for item in items:
-    item.find_element(By.CSS_SELECTOR,"div button").click()
+    itemName = item.find_element(By.CSS_SELECTOR,"div h4").text
+    if itemName == "Blackberry":
+        item.find_element(By.CSS_SELECTOR, "div button").click()
 
 driver.find_element(By.CSS_SELECTOR, ".btn-primary").click()
 driver.find_element(By.CSS_SELECTOR, ".btn-success").click()
