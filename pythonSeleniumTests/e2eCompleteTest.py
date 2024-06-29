@@ -28,11 +28,11 @@ driver.find_element(By.CSS_SELECTOR, ".checkbox").click()
 
 driver.find_element(By.ID, 'country').send_keys("ind")
 wait.until(expected_conditions.presence_of_element_located((By.CSS_SELECTOR, '.suggestions ul li a')))
-countries = driver.find_elements(By.CSS_SELECTOR, '.suggestions ul li a')
-for country in countries:
-    print(country.text)
-    if(country.text == "India"):
-        country.click()
+driver.find_element(By.LINK_TEXT, 'India').click()
+driver.find_element(By.CSS_SELECTOR, "[value='Purchase']").click()
+successMsg = driver.find_element(By.CSS_SELECTOR, ".alert").text
+assert "Success! Thank you" in successMsg
+
 
 time.sleep(3)
 driver.close()
