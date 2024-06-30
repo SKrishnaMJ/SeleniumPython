@@ -16,3 +16,8 @@ def setup1():
     print("I will be executing first as setup1")
     yield
     print("I'm last as setup2")
+
+@pytest.fixture()
+def dataLoad():
+    print("Data is coming from this fixture")
+    return ["Sai", "Krishna", "Hazard"]
