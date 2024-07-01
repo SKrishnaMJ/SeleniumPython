@@ -21,3 +21,8 @@ def setup1():
 def dataLoad():
     print("Data is coming from this fixture")
     return ["Sai", "Krishna", "Hazard"]
+
+@pytest.fixture(params=[("Yeah", "Boi"), "Sai"])
+def paramFixture(request):
+    print("Paramters coming from fixtures")
+    return request.param
