@@ -1,0 +1,5 @@
+2024-07-03 16:23:10,922 :DEBUG :pytestFramework.test_Logging :This is just a debug
+2024-07-03 16:23:10,923 :INFO :pytestFramework.test_Logging :This is just for information
+2024-07-03 16:23:10,923 :WARNING :pytestFramework.test_Logging :Just a warning
+2024-07-03 16:23:10,923 :ERROR :pytestFramework.test_Logging :This is the error
+2024-07-03 16:23:10,923 :CRITICAL :pytestFramework.test_Logging :This is critical
