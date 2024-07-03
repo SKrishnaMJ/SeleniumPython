@@ -1,6 +1,6 @@
 import pytest
 
-from pytestFramework.BaseClass import LogClass
+from pytestFramework.LogClass import LogClass
 
 @pytest.mark.usefixtures("setup1")
 class TestLogInheritance(LogClass):

@@ -1,10 +1,15 @@
+import inspect
 import logging
 
 
 class LogClass:
     def getLogger(self):
+
+        # This takes the name of the test case dynamically at run for that current test case that uses
+        # logger object
+        loggerName = inspect.stack()[1][3]
         # creating a logger object, __name__ automativally takes the current file/testcase.py name
-        logger = logging.getLogger(__name__)
+        logger = logging.getLogger(loggerName)
 
         # this >Formatter() is used to define the format of the log file and the varicale should be passed
         # as part of Filehandler

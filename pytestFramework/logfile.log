@@ -9,3 +9,5 @@
 2024-07-03 16:41:18,398 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo1
 2024-07-03 16:41:18,399 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo2
 2024-07-03 16:41:18,399 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo2
+2024-07-03 16:47:36,199 :INFO :test_LogDemo1 :This is a inherited logclass demo1
+2024-07-03 16:47:36,201 :INFO :test_LogDemo2 :This is a inherited logclass demo2
