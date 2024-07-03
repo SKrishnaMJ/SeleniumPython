@@ -3,3 +3,9 @@
 2024-07-03 16:23:10,923 :WARNING :pytestFramework.test_Logging :Just a warning
 2024-07-03 16:23:10,923 :ERROR :pytestFramework.test_Logging :This is the error
 2024-07-03 16:23:10,923 :CRITICAL :pytestFramework.test_Logging :This is critical
+2024-07-03 16:39:01,285 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo1
+2024-07-03 16:39:01,287 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo2
+2024-07-03 16:39:01,287 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo2
+2024-07-03 16:41:18,398 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo1
+2024-07-03 16:41:18,399 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo2
+2024-07-03 16:41:18,399 :INFO :pytestFramework.BaseClass :This is a inherited logclass demo2

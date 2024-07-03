@@ -3,7 +3,7 @@ import pytest
 # In this the setup  will run for every individual test both before yeild and after yield that is
 # written in the conftest.py file
 @pytest.mark.usefixtures("setup")
-class TestExample:
+class TestExample():
     def test_fixtureDemo1(self):
         print("I'm demo1")
 
